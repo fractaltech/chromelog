@@ -26,6 +26,10 @@ function run(host, port) {
     io.emit('log', req.body);
   });
 
+  app.get('/favicon.ico', function (req, res) {
+    res.end();
+  });
+
   app.get('/', function (req, res) {
     res.send('\n<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.js"></script>\n<script>\n  var socket = io.connect(\'http://' + host + ':' + port + '\');\n  socket.on(\'log\', function (data) {\n    console.log(...data);\n  });\n</script>\n<script>\n  console.log(\'The logs, here you will see\')\n</script>\n<body>\n  <h1 style="font-family: \'sans-serif\'">The Console, Open</h1>\n</body>\n    ');
   });

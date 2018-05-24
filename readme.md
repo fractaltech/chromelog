@@ -1,4 +1,4 @@
-# chromelog - 1.0.2
+# chromelog - 1.0.3
 ### Because sometimes, all you need is a `console.log` in chrome.
 
 ## We follow `breaking.feature.fix` versioning

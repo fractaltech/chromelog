@@ -1,6 +1,6 @@
 {
   "name": "chromelog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Log stuff from anywhere into chrome",
   "repository": "https://github.com/fractaltech/chromelog",
   "main": "client.js",
@@ -27,10 +27,10 @@
     "eslint-plugin-babel": "^3.1.0"
   },
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "cors": "^2.7.1",
-    "express": "^4.13.4",
-    "socket.io": "^1.4.5",
-    "superagent": "^1.8.3"
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "socket.io": "^1.7.4",
+    "superagent": "^1.8.5"
   }
 }
